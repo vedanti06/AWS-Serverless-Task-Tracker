@@ -20,8 +20,8 @@ This project makes extensive use of the following AWS services:
 - **AWS Lambda**: For executing the backend logic without provisioning or managing servers. Each task operation (create, read, update, delete) is implemented as a separate Lambda function.
 - **AWS Cognito**: For creating JWT tokens for authentication and passing the token with every user request for validation.
 - **Amazon API Gateway**: To create a RESTful API endpoint for the frontend to communicate with the Lambda functions. This acts as the entry point for all API requests.
-- **Amazon DynamoDB**: (Assumed) As the NoSQL database for storing task data, providing fast and scalable access.
-- **Amazon S3**: (Assumed) For hosting the static frontend assets, ensuring high availability and durability.
+- **Amazon DynamoDB**: As the NoSQL database for storing task data, providing fast and scalable access.
+- **Amazon S3**: For hosting the static frontend assets, ensuring high availability and durability.
 - **AWS Identity and Access Management (IAM)**: For securely managing access to AWS resources, ensuring that Lambda functions have the necessary permissions to interact with DynamoDB and other services.
 - **AWS CloudFront CDN**: For securely hosting the applications on server closer to the user.
 
@@ -35,7 +35,7 @@ This project makes extensive use of the following AWS services:
 - **Scalable Database**: DynamoDB provides a highly scalable and performant database for task storage.
 - **Secure Access**: IAM roles and policies ensure secure interactions between services.
 
-## Setup and Deployment (Conceptual)
+## Setup and Deployment
 
 1.  **Configure AWS CLI**: Ensure your AWS CLI is configured with appropriate credentials.
 2.  **Deploy Lambda Functions**: Package and deploy the Python Lambda functions to AWS.
